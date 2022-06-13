@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.francesca.platon.config.runtime.CustomConfig,\
+com.francesca.platon.config.conditional.CustomConfig
