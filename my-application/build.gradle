@@ -6,6 +6,7 @@ plugins {
 
 group = 'com.francesca.platon'
 version = '0.1'
+sourceCompatibility = '11'
 
 configurations {
     compileOnly {
@@ -20,7 +21,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'com.francesca.platon:my-lib:0.1'
+    implementation 'com.francesca.platon:my-lib:0.0.1'
     
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
