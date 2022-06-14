@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class CustomConfig {
 
     @Bean("annotationMessage")
-    public void annotationMessage() {
-        System.out.println("Annotation message");
+    public String annotationMessage() {
+        return "Annotation message from bean";
     }
 }

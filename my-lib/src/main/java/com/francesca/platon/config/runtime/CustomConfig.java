@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class CustomConfig {
 
     @Bean("runtimeMessage")
-    public void runtimeMessage() {
-        System.out.println("Runtime message");
+    public String runtimeMessage() {
+        return "Runtime message from bean";
     }
 }

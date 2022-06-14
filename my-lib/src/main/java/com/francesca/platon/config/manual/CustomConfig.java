@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class CustomConfig {
 
     @Bean("manualMessage")
-    public void manualMessage() {
-        System.out.println("Manual message");
+    public String manualMessage() {
+        return "Manual message from bean";
     }
 }

@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Bean;
 @ConditionalOnMissingBean(type = "com.francesca.platon.config.MyBean")
 public class CustomConfig {
 
-    @Bean("annotationMessage")
-    public void annotationMessage() {
-        System.out.println("Annotation message");
+    @Bean("conditionalMessage")
+    public String conditionalMessage() {
+        return "Conditional message from bean";
     }
 }
